@@ -1,0 +1,1 @@
+ C:\\Users\\Shore360-2\\Desktop\\Flutter\ App\\james_flutter\\james_flutter\\.dart_tool\\flutter_build\\fcb7f9a2f71e586d177bcd14a46d71c9\\native_assets.yaml: 
