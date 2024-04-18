@@ -21,79 +21,32 @@ class MyApp extends StatelessWidget {
     ];
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      theme: ThemeData.dark(),
+      theme: ThemeData.light(),
       home: Scaffold(
         appBar: AppBar(
           title: const Text(
-            'My First App',
-            style: TextStyle(color: Colors.black),
+            'MYSHORE',
+            style: TextStyle(color: Colors.blue),
           ),
-          backgroundColor: Colors.amber,
+          backgroundColor: Colors.white,
+          bottom: PreferredSize(preferredSize:  const Size.fromHeight(1.0), 
+          child: Container(
+            decoration: const BoxDecoration(border: Border(
+              bottom: BorderSide(
+                color: Colors.grey,
+                width: 1.0
+              )
+            )),
+          ),),
         ),
         body: Center(
           child: Container(
             width: double.infinity,
             margin: const EdgeInsets.all(10),
             padding: const EdgeInsets.all(10),
-            child: Column(
+            child: const Column(
               children: [
-                Text(
-                  questions[questionIndex],
-                  style: const TextStyle(fontSize: 35),
-                ),
-                const SizedBox(height: 5),
-                // Add a SizedBox to create space
-
-                FilledButton(
-                  onPressed: answerQuestion,
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.amber),
-                  ),
-                  child: const Text(
-                    'Answer 1',
-                    style: TextStyle(color: Colors.black),
-                  ),
-                ),
-                FilledButton(
-                  onPressed: answerQuestion,
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.amber),
-                  ),
-                  child: const Text('Answer 2',
-                      style: TextStyle(color: Colors.black)),
-                ),
-                FilledButton(
-                  onPressed: answerQuestion,
-                  style: ButtonStyle(
-                    backgroundColor: MaterialStateProperty.all(Colors.amber),
-                  ),
-                  child: const Text('Answer 3',
-                      style: TextStyle(color: Colors.black)),
-                ),
-                Column(
-                  children: [
-                     Container(
-                  alignment: Alignment.centerRight,
-                  width: double.infinity,
-                  margin: const EdgeInsets.all(10),
-                  padding: const EdgeInsets.all(10),
-                  decoration: BoxDecoration(
-                    color: Colors.amber,
-                    borderRadius: BorderRadius.circular(10),
-                  ),
-                  child: const FilledButton(
-                    onPressed: null,
-                    style: ButtonStyle(
-                        backgroundColor: MaterialStatePropertyAll(Colors.red)),
-                    child: Text(
-                      'Next Question',
-                      style: TextStyle(color: Colors.white),
-                    ), 
-                  ),
-                ),
-
-                  ],
-                )
+                Text('Welcome to MYSHORE APP')
               ],
             ),
           ),
